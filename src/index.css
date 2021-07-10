@@ -13,7 +13,7 @@ code {
 }
 
 .embed-code {
-  max-width: 600px;
+  max-width: 350px;
   margin-bottom: 20px;
 }
 
@@ -30,14 +30,14 @@ h1 {
   margin-bottom: 20px;
 }
 
-@import url(https://fonts.googleapis.com/css?family=PT+Sans:700|Pacifico|Changa+One);
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:700|Pacifico|Changa+One');
 
 .text-container {
   font-family: "Pacifico", cursive;
   font-weight: 400;
   position: relative;
   margin: 80px auto;
-  width: 700px;
   font-size: 30px;
   text-align: center;
   opacity: 0.8;
@@ -52,7 +52,7 @@ h1 {
 }
 
 .line-2 {
-  font-family: "Changa One", sans-serif;
+  font-family: 'Merriweather Sans', sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   font-size: 90px;
@@ -61,11 +61,24 @@ h1 {
 }
 
 .line-3 {
-  font-family: "PT Sans", sans-serif;
+  font-family: 'Merriweather Sans', sans-serif;
   font-weight: 700;
   font-size: 16px;
   text-transform: uppercase;
   margin: 20px 0 0;
   position: relative;
-  letter-spacing: 6px;
+  letter-spacing: 5px;
+}
+
+.two-col {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.second-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }

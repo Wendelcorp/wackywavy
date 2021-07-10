@@ -36,11 +36,13 @@ export default class Wackybuilder extends React.Component {
       <span className={"line-2"} id={"arc-line"}>Wacky Wavy</span>
       <span className={"line-3"}>Now Web Embeddable</span>
     </div>
+    <div className={"two-col"} >
       <Lottie
 	    options={defaultOptions}
         height={400}
         width={400}
       />
+      <div className="second-col">
       <div className={"embed-code"}>
         <CopyBlock
           className={"embed-code"}
@@ -54,6 +56,8 @@ export default class Wackybuilder extends React.Component {
       </div>
       <TwitterPicker color={ this.state.background }
         onChangeComplete={ this.handleChangeComplete }/>
+      </div>
+      </div>
     </div>
   )}
 }
