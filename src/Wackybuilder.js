@@ -8,7 +8,6 @@ import { CopyBlock, dracula } from "react-code-blocks";
 import animationData from './data/floatingguy';
 import './App.css';
 
-
 export default class Wackybuilder extends React.Component {
 
   state = {
@@ -32,8 +31,11 @@ export default class Wackybuilder extends React.Component {
     console.log(getColors(animationData));
   return (
     <div className={"container"}>
-    <h3>You Can't Have a Sale Without a</h3>
-    <h1>Wacky Wavy</h1>
+    <div className={"text-container"}>
+      <span className={"line-1"}>the original</span>
+      <span className={"line-2"} id={"arc-line"}>Wacky Wavy</span>
+      <span className={"line-3"}>Now Web Embeddable</span>
+    </div>
       <Lottie
 	    options={defaultOptions}
         height={400}
@@ -55,3 +57,5 @@ export default class Wackybuilder extends React.Component {
     </div>
   )}
 }
+
+// const arcText = new ArcText(document.getElementById('arc-line'));
