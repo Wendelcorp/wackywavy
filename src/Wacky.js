@@ -6,11 +6,11 @@ import { getColors } from "lottie-colorify";
 import animationData from "./data/floatingguy";
 import "./App.css";
 
-const windowUrl = window.location.search;
+const windowUrl = window.location.hash;
 const param = new URLSearchParams(windowUrl).toString();
 let colorParam = "FFFFFF";
-if (param.length > 0) {
-  colorParam = param.match(/color=(.*)/)[1].toString();
+if (param.includes("wacky")) {
+  colorParam = param.replace("#/wacky?", "").match(/color=(.*)/)[1].toString();
 }
 
 export default class Wacky extends React.Component {
