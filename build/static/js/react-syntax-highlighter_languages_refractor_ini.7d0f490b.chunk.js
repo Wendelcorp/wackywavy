@@ -1,0 +1,2 @@
+(this.webpackJsonpwackywavy=this.webpackJsonpwackywavy||[]).push([[60],{431:function(t,a,n){"use strict";function s(t){t.languages.ini={comment:/^[ \t]*[;#].*$/m,selector:/^[ \t]*\[.*?\]/m,constant:/^[ \t]*[^\s=]+?(?=[ \t]*=)/m,"attr-value":{pattern:/=.*/,inside:{punctuation:/^[=]/}}}}t.exports=s,s.displayName="ini",s.aliases=[]}}]);
+//# sourceMappingURL=react-syntax-highlighter_languages_refractor_ini.7d0f490b.chunk.js.map
