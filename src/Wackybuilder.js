@@ -38,6 +38,9 @@ export default class Wackybuilder extends React.Component {
             Wacky Wavy
           </span>
           <span className={"line-3"}>Now Web Embeddable</span>
+          <a href={"https://www.producthunt.com/posts/wacky-wavy?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-wacky-wavy"} target={"_blank"}>
+            <img src={"https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=303994&theme=dark"} alt={"Wacky Wavy - The Original Wacky Wavy | Now Web Embeddable | Product Hunt"} style={{width: "250px", height: "54px", marginTop: "50px;"}} />
+          </a>
         </div>
         <div className={"two-col"}>
           <Lottie options={defaultOptions} height={400} width={400} />
