@@ -30,7 +30,6 @@ export default class Wackybuilder extends React.Component {
       },
     };
     const code = `<iframe width="300" height="400" src="http://localhost:3001/wacky?color=${this.state.background}" title="Wacky Wavy" frameborder="0"></iframe>`;
-    console.log(getColors(animationData));
     return (
       <div className={"container"}>
         <div className={"text-container"}>
