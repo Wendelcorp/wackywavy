@@ -56,6 +56,7 @@ export default class Wackybuilder extends React.Component {
             <TwitterPicker
               color={this.state.background}
               onChangeComplete={this.handleChangeComplete}
+              width={"290px"}
             />
           </div>
         </div>
