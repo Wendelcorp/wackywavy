@@ -16,18 +16,18 @@ export default class App extends React.Component {
 
   return (
     <div className={"container"}>
-    <Router>
-    <div>
-      <Switch>
-        <Route path="/wacky">
-          <Wacky />
-        </Route>
-        <Route path="/">
-          <Wackybuilder />
-        </Route>
-      </Switch>
-    </div>
-  </Router>
+      <Router>
+        <div>
+          <Switch>
+            <Route path="/wacky">
+              <Wacky />
+            </Route>
+            <Route path="/">
+              <Wackybuilder />
+            </Route>
+          </Switch>
+        </div>
+      </Router>
     </div>
   )}
 }

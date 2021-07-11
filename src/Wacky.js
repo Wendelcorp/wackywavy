@@ -1,42 +1,40 @@
-import React from 'react';
-import Lottie from 'react-lottie';
-import { replaceColor } from 'lottie-colorify';
-import { colorify } from 'lottie-colorify';
-import { getColors } from 'lottie-colorify';
-import animationData from './data/floatingguy';
-import queryString from 'query-string'
-import './App.css';
+import React from "react";
+import Lottie from "react-lottie";
+import { replaceColor } from "lottie-colorify";
+import { colorify } from "lottie-colorify";
+import { getColors } from "lottie-colorify";
+import animationData from "./data/floatingguy";
+import "./App.css";
 
 const windowUrl = window.location.search;
 const param = new URLSearchParams(windowUrl).toString();
-let colorParam = "FFFFFF"
+let colorParam = "FFFFFF";
 if (param.length > 0) {
-  colorParam = param.match(/color=(.*)/)[1].toString()
+  colorParam = param.match(/color=(.*)/)[1].toString();
 }
 
 export default class Wacky extends React.Component {
-
   state = {
-  background: colorParam,
-  }
+    background: colorParam,
+  };
 
   render() {
-
     const defaultOptions = {
-        loop: true,
-        autoplay: true,
-        animationData: replaceColor([231, 95, 59], `${this.state.background}`, animationData),
-        rendererSettings: {
-          preserveAspectRatio: "xMidYMid slice"
-        }
-      }
-  return (
-    <div className={"container"}>
-      <Lottie
-	    options={defaultOptions}
-        height={400}
-        width={400}
-      />
-    </div>
-  )}
+      loop: true,
+      autoplay: true,
+      animationData: replaceColor(
+        [231, 95, 59],
+        `${this.state.background}`,
+        animationData
+      ),
+      rendererSettings: {
+        preserveAspectRatio: "xMidYMid slice",
+      },
+    };
+    return (
+      <div className={"container"}>
+        <Lottie options={defaultOptions} height={400} width={400} />
+      </div>
+    );
+  }
 }
