@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
   Link,
@@ -16,7 +16,7 @@ export default class App extends React.Component {
 
   return (
     <div className={"container"}>
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <div>
           <Switch>
             <Route path="/wacky">
